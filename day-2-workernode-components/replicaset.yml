@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   name: web-rs
 spec:
-  replicas: 1 # 3 Pods should exist at all times.
+  replicas: 3 # 3 Pods should exist at all times.
   selector:  # Pods label should be defined in ReplicaSet label selector
     matchLabels:
       app: webapp
